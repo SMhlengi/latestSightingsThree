@@ -30,12 +30,12 @@ namespace Revamp_LatestSightings
                 lodge = library.GetLodge(lodgename);
                 if (lodge["lodgeFound"] == "1")
                 {
-                    processLodgePrizesAndName(lodge);
+                    setLodgeName(lodge);
                     processLodgeLogo(lodge["logo"]);
                     //processLodgeTopFiveTingers(lodge["id"]); // not updating this yet
                     //processLodgeTings(lodge);                    
                     json = JsonConvert.SerializeObject(AjaxOperation.GetKrugerTings().GetRange(0,10));
-                    var script = string.Format("setLodgeTingers({0}, '{1}', '{2}', '{3}')", json, tingImageUrlFolder, lodgename, lodge["id"]);
+                    var script = string.Format("setLodgeTingers({0}, '{1}', '{2}', '{3}', {4})", json, tingImageUrlFolder, lodgename, lodge["id"], GetTextSliderContent(lodge));
 
                     ScriptManager.RegisterStartupScript(this, this.GetType(), "", script, true);
                     loadTingsUserControl();
@@ -83,10 +83,24 @@ namespace Revamp_LatestSightings
             //topFiveTingers = AjaxOperation.GetLodgeTopFiveTingers(lodgeid);
         }
 
-        private void processLodgePrizesAndName(Dictionary<string, string> lodge)
+        private void setLodgeName(Dictionary<string, string> lodge)
         {
-            prizes = lodge["prizes"];
             lodgeName = lodge["name"];
+        }
+
+        private string GetTextSliderContent(Dictionary<string, string> lodge)
+        {
+            prizes = removeHtmlParagraphTag(lodge["prizes"]);
+            List<string> sentences = prizes.Split(Convert.ToChar(ConfigurationManager.AppSettings["prizesSplitCharacter"])).ToList();
+            return JsonConvert.SerializeObject(sentences);
+        }
+
+        private string removeHtmlParagraphTag(string item)
+        {
+            var temp = item.Replace("<p>", "");
+            temp = temp.Replace("</p>", "");
+
+            return temp;
         }
     }
 }

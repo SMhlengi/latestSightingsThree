@@ -25,7 +25,7 @@ window.onload = function () {
 
 // Refer to this link for customisation options: http://bxslider.com/options
 
-
+var SLIDERTEXTjson = [];
 var LODGEJson = [];
 var tingImageFolderUrl = "";
 var myVar = "";
@@ -46,12 +46,13 @@ var latestTingDate = "";
 var parkGuid = "";
 var LATESTingsJSON = [];
 
-function setLodgeTingers(json, FolderUrl, name, id) {
+function setLodgeTingers(json, FolderUrl, name, id, sliderAnimationText) {
     LODGEJson = json;
     tingImageFolderUrl = FolderUrl;
     lodgeName = name;
     lodgeId = id;
     var marker;
+    SLIDERTEXTjson = sliderAnimationText;
 }
 
 // Sets the map on all markers in the array.
@@ -556,7 +557,7 @@ function setIndexOfLastTing() {
 }
 
 $(document).ready(function () {
-    //console.log(LODGEJson);
+    console.log(SLIDERTEXTjson);
 
     rememberLodgeName();
     populateTingsHtml(LODGEJson, false);
