@@ -7,12 +7,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LS Sightings Board</title>
-    <link rel="stylesheet" href="<%= ResolveUrl("~/css/board.css?v=12")%>">
+    <link rel="stylesheet" href="<%= ResolveUrl("~/css/board.css?v=22")%>">
     <link rel="stylesheet" href="<%= ResolveUrl("~/css/font-awesome.min.css") %>">
     <link rel="stylesheet" href="<%= ResolveUrl("~/css/jquery.bxslider.css") %>">
     <script src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyB3O6AqwnZ3uHY0h6ulDrxlAWXXrs99VqI"></script>
     <script src="<%= ResolveUrl("~/js/jquery-2.1.1.min.js") %>"></script>
-    <script src="<%= ResolveUrl("~/js/tvLodgeTwo.js?v=44") %>"></script>
+    <script src="<%= ResolveUrl("~/js/tvLodgeTwo.js?v=47") %>"></script>
 
 </head>
 <body>
@@ -24,13 +24,29 @@
             <div class="logo-left">
                 <img src="/images/LS_logo.png">
             </div>
-            <div class="bd-title">
-                <h1>What's happening today around
-                    <% if (!String.IsNullOrEmpty(lodgeName)){%> 
-                        <%= lodgeName %>
-                    <%} %>                    
-                    Lodge
-                </h1>
+            <div id="carousel">
+              <div class="btn-bar">
+                <div id="buttons"><a id="prev" href="#"><</a><a id="next" href="#">></a> </div>
+              </div>
+              <div id="slides">
+                <ul class="textSliderContent">
+                  <li class="slide">
+                    <div class="quoteContainer">
+                      <p class="quote-phrase"> I was literally BLOWN AWAY by Company A's work! They went above and beyond all of our expectations with design, usability. and branding.</p>
+                    </div>
+                  </li>
+                  <li class="slide">
+                    <div class="quoteContainer">
+                      <p class="quote-phrase">I could not stop staring! Company A's Web Solutions are by far the most elegant solutions, you can't beat their quality and attention to detail!</p>
+                    </div>
+                  </li>
+                  <li class="slide">
+                    <div class="quoteContainer">
+                      <p class="quote-phrase">Carl Fakeguy, was the most helpful designer I've ever hired. He listened to my ideas and advised against things that could negatively affect my CEO. </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
             <div class="logo-right">
                 <% if (!String.IsNullOrEmpty(lodoid)){ %>
