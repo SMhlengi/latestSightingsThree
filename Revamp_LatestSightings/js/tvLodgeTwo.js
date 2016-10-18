@@ -156,6 +156,26 @@ function GetLatesingTings() {
 }
 
 
+function CheckIfPageMustBeRefreshed() {
+    var postUrl = "/AjaxOperation.aspx/MustPageBeRefreshed";
+    $.ajax({
+        type: "POST",
+        url: postUrl,
+        contentType: "application/json; charset=utf-8",
+        dataType: "json"
+    }).done(
+        function (data, textStatus, jqXHR) {
+            if (data.d == 1) {
+                location.reload(true);
+            }
+        }
+    ).fail(
+        function (data, textStatus, jqXHR) {
+        }
+    );
+}
+
+
 function UpdateLODGEJson(latestTings) {
 
     for (var i = 0; i < latestTings.length; i++) {
@@ -641,6 +661,8 @@ $(document).ready(function () {
     }
     // END OF TEXT SLIDER CODE
 
+    // reloading of the page past midnight
+    setTimeout(function () { CheckIfPageMustBeRefreshed(); }, 3.6e+6);
     rememberLodgeName();
     populateTingsHtml(LODGEJson, false);
     init_carousel();

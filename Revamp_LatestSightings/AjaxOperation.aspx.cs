@@ -597,5 +597,23 @@ namespace Revamp_LatestSightings
             tings = library.GetLatest24HoursParkTings(park, tingDate);
             return tings;
         }
+
+        [WebMethod]
+        public static int MustPageBeRefreshed()
+        {
+            DateTime currentDate = DateTime.Now;
+            if (isTimeMidnight(currentDate.Hour))
+                return 1;
+            return 0;
+                
+        }
+
+        private static bool isTimeMidnight(int hour)
+        {
+            if (hour == 0)
+                return true;
+            
+            return false;
+        }
     }
 }
