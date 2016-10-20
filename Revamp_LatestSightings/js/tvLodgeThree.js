@@ -444,8 +444,8 @@ function setUpMapsOverlay(lodgeDetails) {
         '<div class="info-wrap"> ' +
             '<div class="profile">' +
                 '<img src="images/profilepic.jpg"> ' +
-                '<div class="profile-txt"> ' +
-                    '<p>#tingedBy#</p>' +
+                '<p>#tingedBy#</p>' +
+                '<div class="profile-txt"> ' +                    
                     '<h3>#TingTitle#</h3>' +
                 '</div>' +
             '</div>' +
