@@ -20,9 +20,7 @@ body {
 
 .bd-wrapper {
     width: 100%;
-    max-width: 1920px;
     height: 100%;
-    max-height: 1080px;
     position: relative;
     background-color: #fff;
     padding: 3% 0;
@@ -119,8 +117,13 @@ h5 {
 }
 
 .video {
-    width: 96%;
+    width: 96%; 
     margin-bottom: 3%;
+    position: relative;  
+    padding-bottom: 56.25%; 
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
 }
 
 .video img {
@@ -136,14 +139,13 @@ h5 {
 }
 
 .card {
-    /*float: right;*/
-    width: 60%; 
-    height: 48%;
-    background-color: #fff;
-    /*position: absolute;*/
-    top: 6%;
-    right: 3%;
-    box-shadow: 2px 2px 6px rgba(0,0,0,0.25);
+    float: right;
+    width: 100%;  
+    height: auto;   
+    max-height: 370px;   
+    background-color: #fff; 
+    position: absolute; 
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
 }
 
 .card img {
@@ -154,8 +156,8 @@ h5 {
 
 .info-wrap {
     width: 100%;
-    padding: 2% 1%;
-    float: left;
+    padding: 1.2em;
+    max-height: 210px;
 }
 
 .profile,
@@ -164,6 +166,7 @@ h5 {
 .des {
     width: 100%;
     float: left;
+    margin-bottom: 2%;
 }
 
 .profile {
@@ -179,16 +182,22 @@ h5 {
     width: 3.125rem;
     height: 3.125rem;
     float: left;
-    border-radius: 50%;
-    border: 2px solid #f69121;
+    border-radius: 50%;   
+    border: 2px solid #f69121;  
+    margin-right: 4%;
 }
 
 .profile-txt {
-    width: 77%;
+    width: auto;
     float: left;
-    text-align: left;
+    text-align: left; 
+    color: #564338;  
+    line-height: 1.5rem;
+}
+
+.profile p {
+    text-align: left;           
     color: #564338;
-    margin-left: 4%;
     line-height: 1.5rem;
 }
 
@@ -229,6 +238,26 @@ h5 {
     font-size: 15px;
 }
 
+
+.info-wrap:before,
+.info-wrap:after {
+    content: " ";
+    display: table;
+}
+ 
+.info-wrap:after {
+    clear: both;
+}
+ 
+.info-wrap {
+    *zoom: 1;
+}
+ 
+.des {
+    max-height: 4rem;
+    overflow: hidden;
+}
+
 /* Carousel */
 
 .bx-viewport {
@@ -247,14 +276,24 @@ h5 {
 }
 
 .bxslider li .pic {
-    width: 80px;
-    height: 80px;
-    overflow: hidden;
+    width: 80px; 
+    height: 80px;  
+    overflow: hidden; 
     float: left;
+    background: black; 
+    position: relative;
 }
 
 .bxslider li img {
-    height: 100%;
+    height: 100%; 
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
 }
 
 .bxslider .info {
@@ -317,6 +356,28 @@ h5 {
 .stores img {
     float: right;
     height: 3.75rem;
+}
+
+
+.img-wrap {
+    height: 160px;
+    position: relative;
+    background-color: #000; 
+    overflow: hidden;
+}
+
+
+.card .img-wrap img {
+    max-width: 285px;  
+    max-height: 160px;   
+    position: absolute;  
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    -webkit-transform: translate(-50%, -50%);
+     ms-transform: translate(-50%, -50%);
+     moz-transform: translate(-50%, -50%);
+     0-transform: translate(-50%, -50%);
 }
 
 /* SLIDER TEXT */
@@ -411,11 +472,20 @@ h5 {
   width: 100%;
 }
 
+.gm-style .gm-style-iw {
+    font-weight: normal; 
+    font-size: 1rem;
+    width: 285px !important;
+    top: -230px !important;
+    left: 135px !important;
+    overflow: visible;
+}
+
 /* RESPONSIVE STYLES
 --------------------------------------*/
 
 @media screen and (min-width: 1920px) {
-    html {
+   html {
         font-size: 20px;
     }
     
@@ -426,5 +496,28 @@ h5 {
     .bxslider li .pic {
         width: 100px;
         height: 100px;
+    }
+
+    .card {
+        max-height: 520px;
+    }
+ 
+    .gm-style .gm-style-iw {
+        width: 370px !important;
+        top: -200px !important;
+        left: 200px !important;
+    }
+ 
+    .img-wrap {
+        height: 197px;
+    }
+ 
+    .card .img-wrap img {
+        max-width: 370px;
+        max-height: 197px;
+    }
+ 
+    .info-wrap {
+        max-height: 323px;
     }
 }

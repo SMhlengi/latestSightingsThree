@@ -7,12 +7,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LS Sightings Board</title>
-    <link rel="stylesheet" href="<%= ResolveUrl("~/css/board.css?v=22")%>">
+    <link rel="stylesheet" href="<%= ResolveUrl("~/css/board.css?v=24")%>">
     <link rel="stylesheet" href="<%= ResolveUrl("~/css/font-awesome.min.css") %>">
     <link rel="stylesheet" href="<%= ResolveUrl("~/css/jquery.bxslider.css") %>">
     <script src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyB3O6AqwnZ3uHY0h6ulDrxlAWXXrs99VqI"></script>
     <script src="<%= ResolveUrl("~/js/jquery-2.1.1.min.js") %>"></script>
-    <script src="<%= ResolveUrl("~/js/tvLodgeTwo.js?v=48") %>"></script>
+    <script src="<%= ResolveUrl("~/js/tvLodgeTwo.js?v=56") %>"></script>
 
 </head>
 <body>

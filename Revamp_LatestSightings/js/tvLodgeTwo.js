@@ -109,7 +109,12 @@ function initialize() {
         map: map
     });
     //markers.push(marker);
-    setTimeout(function () { infowindow.open(map, marker); }, 1000);
+    setTimeout(function () {
+        infowindow.open(map, marker);
+        $(".gm-style-iw").prev().hide();
+        $(".gm-style-iw").next().hide();
+    }, 1000);
+
 
 
     mapsTimeoutVariable = setInterval(function () { displayNewMap() }, 12100);
@@ -125,7 +130,11 @@ function initialize() {
         });
         //markers.push(marker);
         infowindow.setContent(TingOverlay);        
-        setTimeout(function () { infowindow.open(map, marker); }, 1000);
+        setTimeout(function () {
+            infowindow.open(map, marker);
+            $(".gm-style-iw").prev().hide();
+            $(".gm-style-iw").next().hide();
+        }, 1000);
     }
 
 }
@@ -475,12 +484,12 @@ function setUpMapsOverlay(lodgeDetails) {
     LODGE_long = lodgeDetails.longitude;
 
     TingOverlay = '<div class="card"> ' +
-        '<img src="#TingImage#"> ' +
+        '<div class="img-wrap"><img src="#TingImage#"></div> ' +
         '<div class="info-wrap"> ' +
             '<div class="profile">' +
                 '<img src="images/profilepic.jpg"> ' +
-                '<div class="profile-txt"> ' +
-                    '<p>#tingedBy#</p>' +
+                '<p>#tingedBy#</p>' +
+                '<div class="profile-txt"> ' +                    
                     '<h3>#TingTitle#</h3>' +
                 '</div>' +
             '</div>' +
