@@ -273,6 +273,7 @@
     <Content Include="js\enqureForm.js" />
     <Content Include="js\gallery.js" />
     <Content Include="js\galleryviewmodal.js" />
+    <Content Include="js\gistfile1.js" />
     <Content Include="js\homePage.js" />
     <Content Include="js\homePageBillboard.js" />
     <Content Include="js\homePageLatestBlogs.js" />

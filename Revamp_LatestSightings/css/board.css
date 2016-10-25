@@ -481,6 +481,10 @@ h5 {
     overflow: visible;
 }
 
+.marqueeP{
+    font-size:23px !important;
+}
+
 /* RESPONSIVE STYLES
 --------------------------------------*/
 
