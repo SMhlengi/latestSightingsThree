@@ -109,6 +109,7 @@ namespace Revamp_LatestSightings
         protected void Application_Start(object sender, EventArgs e)
         {
             RegisterRoutes(RouteTable.Routes);
+            RouteTable.Routes.MapPageRoute("IsSessionLoginValid", "IsSessionValid", "~/ValidSession.aspx");
         }
 
         protected void Session_Start(object sender, EventArgs e)

@@ -59,6 +59,8 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.WebRequest" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -382,6 +384,7 @@
     <Content Include="uc_viewFinancials.ascx" />
     <Content Include="UserFinancials.aspx" />
     <Content Include="UserGraphs.aspx" />
+    <Content Include="ValidSession.aspx" />
     <Content Include="VideoItemData.aspx" />
     <Content Include="videoList.ascx" />
     <Content Include="videopreview.aspx" />
@@ -893,6 +896,7 @@
     <Compile Include="uc_viewFinancials.ascx.designer.cs">
       <DependentUpon>uc_viewFinancials.ascx</DependentUpon>
     </Compile>
+    <Compile Include="UserData.cs" />
     <Compile Include="UserFinancials.aspx.cs">
       <DependentUpon>UserFinancials.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -908,6 +912,13 @@
       <DependentUpon>UserGraphs.aspx</DependentUpon>
     </Compile>
     <Compile Include="utils.cs" />
+    <Compile Include="ValidSession.aspx.cs">
+      <DependentUpon>ValidSession.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ValidSession.aspx.designer.cs">
+      <DependentUpon>ValidSession.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Video.cs" />
     <Compile Include="VideoItemData.aspx.cs">
       <DependentUpon>VideoItemData.aspx</DependentUpon>
