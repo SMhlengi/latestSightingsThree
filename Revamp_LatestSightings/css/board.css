@@ -143,14 +143,15 @@ h5 {
     width: 100%;  
     height: auto;   
     max-height: 370px;   
+    margin-top:-42px;
     background-color: #fff; 
     position: absolute; 
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
 }
 
 .card img {
-    width: 50%;
-    height: auto;
+    width: 90%;
+    height: 100%;
     float: left;
 }
 
@@ -270,9 +271,9 @@ h5 {
 
 .bxslider li {
     display: inline-block;
-    margin-bottom: -4px;
+    /*margin-bottom: -4px;*/
     background-color: #fff;
-    border-bottom: 1px solid rgba(187, 153, 117, 0.5);
+    /*border-bottom: 1px solid rgba(187, 153, 117, 0.5);*/
 }
 
 .bxslider li .pic {
@@ -313,7 +314,8 @@ h5 {
 }
 
 .bxslider .active {
-    background-color: #bb9975;
+    /*background-color: #bb9975;*/
+    border: 2px solid black;
 }
 
 .bxslider .active h3,
@@ -362,7 +364,8 @@ h5 {
 .img-wrap {
     height: 160px;
     position: relative;
-    background-color: #000; 
+    /*background-color: #000; */
+    background-color:white;
     overflow: hidden;
 }
 
@@ -494,7 +497,7 @@ h5 {
     }
     
     .bxslider li {
-        margin-bottom: -5px;
+        /*margin-bottom: -5px;*/
     }
     
     .bxslider li .pic {
@@ -503,7 +506,7 @@ h5 {
     }
 
     .card {
-        max-height: 520px;
+        max-height: 587px;
     }
  
     .gm-style .gm-style-iw {
@@ -513,15 +516,16 @@ h5 {
     }
  
     .img-wrap {
-        height: 197px;
+        height: 342px;
     }
  
     .card .img-wrap img {
         max-width: 370px;
-        max-height: 197px;
+        max-height: 326px;
     }
  
     .info-wrap {
-        max-height: 323px;
+        max-height: 280px;
+        height:280px;
     }
 }
