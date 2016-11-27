@@ -39,16 +39,13 @@
                                                                 Social media sites like Facebook, Twitter, Instagram, Snapchat
                                                             </li>
                                                             <li class="not-monetised-and-no-bold">
-                                                                The Weather School
+                                                                The Weather Channel
                                                             </li>
                                                             <li class="monetised no-list-style">
                                                                 Monetised
                                                             </li>
                                                             <li class="monetised-and-no-bold">
                                                                 Stock Library
-                                                            </li>
-                                                            <li class="monetised-and-no-bold">
-                                                                Media Distribution
                                                             </li>
                                                         </ul>
                                                     </div>
@@ -68,6 +65,9 @@
                                                             </li>
                                                             <li class="not-monetised-and-no-bold">
                                                                 Social media sites like Facebook, Twitter, Instagram, Snapchat
+                                                            </li>
+                                                            <li class="not-monetised-and-no-bold">
+                                                                The Weather Channel
                                                             </li>
                                                             <li class="monetised no-list-style">
                                                                 Monetised
@@ -96,6 +96,9 @@
                                                             </li>
                                                             <li class="not-monetised-and-no-bold">
                                                                 Social media sites like Facebook, Twitter, Instagram, Snapchat
+                                                            </li>
+                                                            <li class="not-monetised-and-no-bold">
+                                                                The Weather Channel
                                                             </li>
                                                             <li class="monetised no-list-style">
                                                                 Monetised
