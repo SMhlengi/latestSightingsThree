@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LS Sightings Board</title>
-    <link rel="stylesheet" href="<%= ResolveUrl("~/css/board.css?v=30")%>">
+    <link rel="stylesheet" href="<%= ResolveUrl("~/css/board.css?v=31")%>">
     <link rel="stylesheet" href="<%= ResolveUrl("~/css/font-awesome.min.css") %>">
     <link rel="stylesheet" href="<%= ResolveUrl("~/css/jquery.bxslider.css") %>">
     <script src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyB3O6AqwnZ3uHY0h6ulDrxlAWXXrs99VqI"></script>
@@ -39,7 +39,7 @@
             <div class="leftcol">
                 <!-- Video -->
                 <div class="video">
-                    <iframe width="400" height="220" src="https://www.youtube.com/embed/videoseries?list=PL_K2CjlrV2nD_V9wDQPSGAkIo5o5wzhYV&autoplay=1" frameborder="0" allowfullscreen></iframe>
+                    <iframe width="400" height="220" src="https://www.youtube.com/embed/videoseries?list=PL_K2CjlrV2nD_V9wDQPSGAkIo5o5wzhYV" frameborder="0" allowfullscreen></iframe>
                 </div>
                 <!-- Carousel -->
                 <ul class="bxslider">
