@@ -446,6 +446,16 @@ namespace Revamp_LatestSightings
             return parks;
         }
 
+        [WebMethod]
+        public static List<Dictionary<string, string>> GetTings(Guid parkid)
+        {
+            List<Dictionary<string, string>> tings = new List<Dictionary<string, string>>();
+            tings = GetParkTings(parkid);
+            return tings;
+        }
+        
+
+
         private static List<Dictionary<string, string>> GetParkTings(Guid parkid)
         {
             //var dt = DateTime.Now;
