@@ -458,13 +458,22 @@ namespace Revamp_LatestSightings
 
         private static List<Dictionary<string, string>> GetParkTings(Guid parkid)
         {
+            int iteration = 0;
+            int days = -1;
+            List<Dictionary<string, string>> parkTings = new List<Dictionary<string, string>>();
             //var dt = DateTime.Now;
             //string stringDate = "";
             //int counter = 0;
+            while (iteration < 5 && parkTings.Count < 9)
+            {
+                parkTings = library.GetLatest24HoursParkTings(parkid, days);
+                iteration += 1;
+                days -= 30;
+            }
 
             //stringDate = String.Format("{0}", Convert.ToString(dt.Year) + "-" + Convert.ToString(dt.Month) + "-" + Convert.ToString(dt.Day));
-            List<Dictionary<string, string>> parkTings = new List<Dictionary<string, string>>();
-            parkTings = library.GetLatest24HoursParkTings(parkid);
+
+
 
             //while (lodgeTings.Count == 0)
             //{
