@@ -35,7 +35,7 @@ namespace Revamp_LatestSightings
                     //processLodgeTopFiveTingers(lodge["id"]); // not updating this yet
                     //processLodgeTings(lodge);                    
                     //json = JsonConvert.SerializeObject(AjaxOperation.GetKrugerTings().GetRange(0,10));
-                    json = JsonConvert.SerializeObject(AjaxOperation.GetTings(new Guid(lodge["parkid"])));
+                    json = JsonConvert.SerializeObject(AjaxOperation.GetLodgeTings(new Guid(lodge["parkid"])));
 
                     var script = string.Format("setLodgeTingers({0}, '{1}', '{2}', '{3}', {4})", json, tingImageUrlFolder, lodgename, lodge["id"], GetTextSliderContent(lodge));
 

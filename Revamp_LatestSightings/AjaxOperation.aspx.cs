@@ -447,7 +447,7 @@ namespace Revamp_LatestSightings
         }
 
         [WebMethod]
-        public static List<Dictionary<string, string>> GetTings(Guid parkid)
+        public static List<Dictionary<string, string>> GetLodgeTings(Guid parkid)
         {
             List<Dictionary<string, string>> tings = new List<Dictionary<string, string>>();
             tings = GetParkTings(parkid);
