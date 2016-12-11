@@ -1,7 +1,7 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="uc_StyleSheets.ascx.cs" Inherits="Revamp_LatestSightings.uc_StyleSheets" %>
 
 
-<link href="<%= ResolveUrl("~/css/GoogleApisFonts.css") %>" rel="stylesheet" type="text/css">
+<link href="<%= ResolveUrl("~/css/GoogleApisFonts.css?v=2") %>" rel="stylesheet" type="text/css">
 <link href="<%= ResolveUrl("~/css/bootstrap.min.css") %>" rel="stylesheet">
 <link href="<%= ResolveUrl("~/css/font-awesome.min.css") %>" rel="stylesheet">
 <link href="<%= ResolveUrl("~/css/owl.carousel.css?v=2") %>" rel="stylesheet">
