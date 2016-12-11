@@ -470,6 +470,10 @@ namespace Revamp_LatestSightings
                 iteration += 1;
                 days -= 30;
             }
+            if (parkTings.Count  > 30)
+            {
+                parkTings = parkTings.GetRange(0, 25);
+            }
 
             //stringDate = String.Format("{0}", Convert.ToString(dt.Year) + "-" + Convert.ToString(dt.Month) + "-" + Convert.ToString(dt.Day));
 
