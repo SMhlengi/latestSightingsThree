@@ -37,7 +37,7 @@ namespace Revamp_LatestSightings
                     //json = JsonConvert.SerializeObject(AjaxOperation.GetKrugerTings().GetRange(0,10));
                     json = JsonConvert.SerializeObject(AjaxOperation.GetLodgeTings(new Guid(lodge["parkid"])));
 
-                    var script = string.Format("setLodgeTingers({0}, '{1}', '{2}', '{3}', {4})", json, tingImageUrlFolder, lodgename, lodge["id"], GetTextSliderContent(lodge));
+                    var script = string.Format("setLodgeTingers({0}, '{1}', '{2}', '{3}', '{4}')", json, tingImageUrlFolder, lodgename, lodge["id"], GetTextSliderContent(lodge));
 
                     ScriptManager.RegisterStartupScript(this, this.GetType(), "", script, true);
                     loadTingsUserControl();
@@ -93,8 +93,9 @@ namespace Revamp_LatestSightings
         private string GetTextSliderContent(Dictionary<string, string> lodge)
         {
             prizes = removeHtmlParagraphTag(lodge["prizes"]);
-            List<string> sentences = prizes.Split(Convert.ToChar(ConfigurationManager.AppSettings["prizesSplitCharacter"])).ToList();
-            return JsonConvert.SerializeObject(sentences);
+            //List<string> sentences = prizes.Split(Convert.ToChar(ConfigurationManager.AppSettings["prizesSplitCharacter"])).ToList();
+            //return JsonConvert.SerializeObject(sentences);
+            return prizes;
         }
 
         private string removeHtmlParagraphTag(string item)

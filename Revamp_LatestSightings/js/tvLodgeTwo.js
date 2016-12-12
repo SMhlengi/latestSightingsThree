@@ -25,7 +25,7 @@ window.onload = function () {
 
 // Refer to this link for customisation options: http://bxslider.com/options
 
-var SLIDERTEXTjson = [];
+var SLIDERTEXT = "";
 var LODGEJson = [];
 var tingImageFolderUrl = "";
 var myVar = "";
@@ -52,7 +52,7 @@ function setLodgeTingers(json, FolderUrl, name, id, sliderAnimationText) {
     lodgeName = name;
     lodgeId = id;
     var marker;
-    SLIDERTEXTjson = sliderAnimationText;
+    SLIDERTEXT = sliderAnimationText;
 }
 
 // Sets the map on all markers in the array.
@@ -277,19 +277,8 @@ function destroy_carousel() {
 }
 
 
-function populateTextSlider() {
-    var textTemplate = '<li class="slide">' +
-                        '<div class="quoteContainer">' +
-                          '<p class="quote-phrase">#sliderText#</p>' +
-                        '</div>' +
-                      '</li>';
-
-    var sliderContent = "";
-    for (var i = 0; i < SLIDERTEXTjson.length; i++) {
-        sliderContent += textTemplate.replace("#sliderText#", SLIDERTEXTjson[i]);
-    }
-
-    $(".textSliderContent").html(sliderContent);
+function setmarqueeP() {
+    $(".marqueeP").text(SLIDERTEXT);
 }
 
 function populateTingsHtml(tings, sliderReload) {
@@ -602,11 +591,11 @@ function setIndexOfLastTing() {
 }
 
 $(document).ready(function () {
-    console.log(SLIDERTEXTjson);
 
     // reloading of the page past midnight
     setTimeout(function () { CheckIfPageMustBeRefreshed(); }, 3.6e+6);
     rememberLodgeName();
+    setmarqueeP();
     populateTingsHtml(LODGEJson, false);
     init_carousel();
 });

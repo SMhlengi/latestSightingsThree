@@ -7,12 +7,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LS Sightings Board</title>
-    <link rel="stylesheet" href="<%= ResolveUrl("~/css/board.css?v=31")%>">
+    <link rel="stylesheet" href="<%= ResolveUrl("~/css/board.css?v=32")%>">
     <link rel="stylesheet" href="<%= ResolveUrl("~/css/font-awesome.min.css") %>">
     <link rel="stylesheet" href="<%= ResolveUrl("~/css/jquery.bxslider.css") %>">
     <script src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyB3O6AqwnZ3uHY0h6ulDrxlAWXXrs99VqI"></script>
     <script src="<%= ResolveUrl("~/js/jquery-2.1.1.min.js") %>"></script>
-    <script src="<%= ResolveUrl("~/js/tvLodgeTwo.js?v=59") %>"></script>
+    <script src="<%= ResolveUrl("~/js/tvLodgeTwo.js?v=61") %>"></script>
     <script src="<%= ResolveUrl("~/js/gistfile1.js?") %>"></script>
 
 </head>
@@ -26,7 +26,7 @@
                 <img src="/images/LS_logo.png">
             </div>
             <marquee scrollamount="4" behavior="scroll" direction="left" width="1000">
-                <p class="marqueeP">I was literally BLOWN AWAY by Company A's work! They went above and beyond all of our expectations with design, usability. and branding. Carl Fakeguy, was the most helpful designer I've ever hired. He listened to my ideas and advised against things that could negatively affect my CEO. I could not stop staring! Company A's Web Solutions are by far the most elegant solutions, you can't beat their quality and attention to detail! </p>
+                <p class="marqueeP"></p>
             </marquee>
             <div class="logo-right">
                 <% if (!String.IsNullOrEmpty(lodoid)){ %>
