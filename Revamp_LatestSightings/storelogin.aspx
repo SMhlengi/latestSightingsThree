@@ -4,6 +4,11 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
+<style>
+    .navbar-inverse{
+        display:none;
+    }
+</style>
 
     <!-- Main Container Section -->			
     <div class="container  panel-signin">
