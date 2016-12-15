@@ -346,6 +346,8 @@
     <Content Include="resumableFileUpload.aspx" />
     <Content Include="searchResults.aspx" />
     <Content Include="sightings.aspx" />
+    <Content Include="store.aspx" />
+    <Content Include="storelogin.aspx" />
     <Content Include="terms.aspx" />
     <Content Include="termsAndConditions.ascx" />
     <Content Include="ting.aspx" />
@@ -642,6 +644,20 @@
     </Compile>
     <Compile Include="Site1.Master.designer.cs">
       <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="store.aspx.cs">
+      <DependentUpon>store.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="store.aspx.designer.cs">
+      <DependentUpon>store.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="storelogin.aspx.cs">
+      <DependentUpon>storelogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="storelogin.aspx.designer.cs">
+      <DependentUpon>storelogin.aspx</DependentUpon>
     </Compile>
     <Compile Include="terms.aspx.cs">
       <DependentUpon>terms.aspx</DependentUpon>

@@ -400,7 +400,11 @@
                     if ($("#rememberMe").prop("checked")) {
                         SetRememberCookie(data.d.encreptedPassword);
                     }
-                    setTimeout(function () { location.href = "/dashboard.aspx" }, 3500);
+                    if (location.href.toLowerCase().indexOf("storelogin") != -1) {
+                        setTimeout(function () { location.href = "/store" }, 3500);
+                    } else {
+                        setTimeout(function () { location.href = "/dashboard.aspx" }, 3500);
+                    }
                 } else {
                     $(".registerSpinner").hide();
                     $("div .email").prev().addClass("has-error");

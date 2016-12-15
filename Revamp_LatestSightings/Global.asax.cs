@@ -43,6 +43,11 @@ namespace Revamp_LatestSightings
                 "~/login.aspx", true,
             new RouteValueDictionary { });
 
+            routes.MapPageRoute("StoreLogin",
+                "storelogin",
+                "~/storelogin.aspx", true,
+            new RouteValueDictionary { });
+
             routes.MapPageRoute("Register",
                 "register",
                 "~/register.aspx", true,
@@ -81,6 +86,11 @@ namespace Revamp_LatestSightings
             routes.MapPageRoute("partnership",
             "partnership",
             "~/partnership.aspx", true,
+            new RouteValueDictionary { });
+
+            routes.MapPageRoute("store",
+            "store",
+            "~/store.aspx", true,
             new RouteValueDictionary { });
 
             routes.MapPageRoute("bloglist",
