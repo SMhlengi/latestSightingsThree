@@ -15,7 +15,7 @@
 </style>
 
 
-    <iframe src="https://www.latestsightings.com/shop/packages/"  width="1075" height="2001"></iframe>
+    <iframe src="https://www.latestsightings.com/shop/"  width="1075" height="2001"></iframe>
 
 
 
