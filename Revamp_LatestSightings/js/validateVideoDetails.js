@@ -166,7 +166,25 @@
         );
     }
 
+    function CleanUpTextInput(textinput) {
+        textinput = textinput.replace(/,/g, " ");
+        textinput = textinput.replace(/;/g, ".");
+        textinput = textinput.replace(/'/g, " ");
+        textinput = textinput.replace(/`/g, " ");
+        textinput = textinput.replace(/"/g, "");
+        return textinput;
+
+    }
+
     function UpdateImageDetails(animal, activity, area, tags, comments, title) {
+        animal = CleanUpTextInput(animal);
+        activity = CleanUpTextInput(activity);
+        area = CleanUpTextInput(area);
+        tags = CleanUpTextInput(tags);
+        comments = CleanUpTextInput(comments);
+        title = CleanUpTextInput(title);
+
+
         var postUrl = "/AjaxOperation.aspx/SaveImageDetails";
         $.ajax({
             type: "POST",

@@ -65,7 +65,22 @@ $(document).ready(function () {
         return valid;
     }
 
+    function CleanUpTextInput(textinput) {
+        textinput = textinput.replace(/,/g, " ");
+        textinput = textinput.replace(/;/g, ".");
+        textinput = textinput.replace(/'/g, " ");
+        textinput = textinput.replace(/`/g, " ");
+        textinput = textinput.replace(/"/g, "");
+        return textinput;
+
+    }
+
     function SaveVideoDetailsAndSendMail(videoTitle, alias, keywords, notes) {
+        videoTitle = CleanUpTextInput(videoTitle);
+        alias = CleanUpTextInput(alias);
+        keywords = CleanUpTextInput(keywords);
+        notes = CleanUpTextInput(notes);
+
         var postUrl = "/AjaxOperation.aspx/SaveVideoDetailsAndSendMail";
         $.ajax({
             type: "POST",

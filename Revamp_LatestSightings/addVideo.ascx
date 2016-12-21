@@ -297,4 +297,4 @@
     </div>
 <%} %>
 
-<script src="<%= ResolveUrl("~/js/validateVideoDetails.js?v=17") %>"></script>
+<script src="<%= ResolveUrl("~/js/validateVideoDetails.js?v=21") %>"></script>
