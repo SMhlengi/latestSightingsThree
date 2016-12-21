@@ -118,7 +118,7 @@ namespace Revamp_LatestSightings
                     if (video != null && count < 6)
                     {
                         List<YouTubeVideoAnalytic> videoDays = YouTubeVideoAnalytic.GetDaysByVideo(year, month, stat.Id);
-                        if (videoDays != null)
+                        if (videoDays != null && videoDays.Count > 0)
                         {
                             int videoLastDay = videoDays.OrderByDescending(x => x.Day).ToList()[0].Day;
                             if (videoLastDay > totalDays)
