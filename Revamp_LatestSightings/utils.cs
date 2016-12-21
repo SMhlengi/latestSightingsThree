@@ -15,7 +15,7 @@ namespace Revamp_LatestSightings
         {
             try
             {
-                MailMessage message = new MailMessage("No-Reply@lscms.socialengine.co.za", emailAddress);
+                MailMessage message = new MailMessage("No-Reply@socialengine.co.za", emailAddress);
                 SmtpClient smtpClient = new SmtpClient();
                 smtpClient.Port = 25;
                 smtpClient.DeliveryMethod = SmtpDeliveryMethod.Network;
@@ -39,7 +39,7 @@ namespace Revamp_LatestSightings
         {
             try
             {
-                MailMessage message = new MailMessage("No-Reply@lscms.socialengine.co.za", ConfigurationManager.AppSettings["contactUsEmailAddress"]);
+                MailMessage message = new MailMessage("No-Reply@socialengine.co.za", ConfigurationManager.AppSettings["contactUsEmailAddress"]);
                 SmtpClient smtpClient = new SmtpClient();
                 smtpClient.Port = 25;
                 smtpClient.DeliveryMethod = SmtpDeliveryMethod.Network;
@@ -130,7 +130,7 @@ namespace Revamp_LatestSightings
                 url += userId;
                 try
                 {
-                    MailMessage message = new MailMessage("No-Reply@lscms.socialengine.co.za", emailAddress);
+                    MailMessage message = new MailMessage("No-Reply@socialengine.co.za", emailAddress);
                     SmtpClient smtpClient = new SmtpClient();
                     smtpClient.Port = 25;
                     smtpClient.DeliveryMethod = SmtpDeliveryMethod.Network;
@@ -158,7 +158,7 @@ namespace Revamp_LatestSightings
                 url += emailAddress;
                 try
                 {
-                    MailMessage message = new MailMessage("No-Reply@lscms.socialengine.co.za", emailAddress);
+                    MailMessage message = new MailMessage("No-Reply@socialengine.co.za", emailAddress);
                     SmtpClient smtpClient = new SmtpClient();
                     smtpClient.Port = 25;
                     smtpClient.DeliveryMethod = SmtpDeliveryMethod.Network;
@@ -209,7 +209,7 @@ namespace Revamp_LatestSightings
             url += string.Format("{0}&video={1}", userid, videoId);
             try
             {
-                MailMessage message = new MailMessage("No-Reply@lscms.socialengine.co.za", ConfigurationManager.AppSettings["videoAdministratorEmailAddress"].ToString());
+                MailMessage message = new MailMessage("No-Reply@socialengine.co.za", ConfigurationManager.AppSettings["videoAdministratorEmailAddress"].ToString());
                 SmtpClient smtpClient = new SmtpClient();
                 smtpClient.Port = 25;
                 smtpClient.DeliveryMethod = SmtpDeliveryMethod.Network;
@@ -346,7 +346,7 @@ namespace Revamp_LatestSightings
         {
             try
             {
-                MailMessage message = new MailMessage("No-Reply@lscms.socialengine.co.za", useremail);
+                MailMessage message = new MailMessage("No-Reply@socialengine.co.za", useremail);
                 SmtpClient smtpClient = new SmtpClient();
                 smtpClient.Port = 25;
                 smtpClient.DeliveryMethod = SmtpDeliveryMethod.Network;
@@ -393,7 +393,7 @@ namespace Revamp_LatestSightings
         {
             try
             {
-                MailMessage message = new MailMessage("No-Reply@lscms.socialengine.co.za", useremail);
+                MailMessage message = new MailMessage("No-Reply@socialengine.co.za", useremail);
                 SmtpClient smtpClient = new SmtpClient();
                 smtpClient.Port = 25;
                 smtpClient.DeliveryMethod = SmtpDeliveryMethod.Network;
@@ -600,7 +600,7 @@ namespace Revamp_LatestSightings
         {
             try
             {
-                MailMessage message = new MailMessage("No-Reply@lscms.socialengine.co.za", ConfigurationManager.AppSettings["contactUsEmailAddress"]);
+                MailMessage message = new MailMessage("No-Reply@socialengine.co.za", ConfigurationManager.AppSettings["contactUsEmailAddress"]);
                 SmtpClient smtpClient = new SmtpClient();
                 smtpClient.Port = 25;
                 smtpClient.DeliveryMethod = SmtpDeliveryMethod.Network;
@@ -690,12 +690,13 @@ namespace Revamp_LatestSightings
             string mailSent = "false";
             try
             {
-                MailMessage message = new MailMessage("No-Reply@lscms.socialengine.co.za", ConfigurationManager.AppSettings["videoAdministratorEmailAddress"].ToString());
+                MailMessage message = new MailMessage("No-Reply@socialengine.co.za", ConfigurationManager.AppSettings["videoAdministratorEmailAddress"].ToString());
                 SmtpClient smtpClient = new SmtpClient();
                 smtpClient.Port = 25;
                 smtpClient.DeliveryMethod = SmtpDeliveryMethod.Network;
                 smtpClient.UseDefaultCredentials = false;
                 smtpClient.Host = "freeza.aserv.co.za";
+                //smtpClient.Host = "mail.socialengine.co.za";
                 NetworkCredential networkCredential = new NetworkCredential("No-Reply@socialengine.co.za", "N0-R3ply");
                 smtpClient.Credentials = (ICredentialsByHost)networkCredential;
                 message.Subject = "Video details captured";
@@ -726,10 +727,11 @@ namespace Revamp_LatestSightings
 
         public static string SendEmailToAdministratorAboutImageRecordCaptured(Person userDetails, Image imageObj, string type = "imageDetailsCaptured", string recordId = "")
         {
+
             string mailSent = "false";
             try
             {
-                MailMessage message = new MailMessage("No-Reply@lscms.socialengine.co.za", ConfigurationManager.AppSettings["videoAdministratorEmailAddress"].ToString());
+                MailMessage message = new MailMessage("No-Reply@socialengine.co.za", ConfigurationManager.AppSettings["videoAdministratorEmailAddress"].ToString());
                 SmtpClient smtpClient = new SmtpClient();
                 smtpClient.Port = 25;
                 smtpClient.DeliveryMethod = SmtpDeliveryMethod.Network;
