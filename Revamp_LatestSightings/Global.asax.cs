@@ -48,6 +48,11 @@ namespace Revamp_LatestSightings
                 "~/storelogin.aspx", true,
             new RouteValueDictionary { });
 
+            routes.MapPageRoute("StoreRegister",
+                "storeregister",
+                "~/storeregister.aspx", true,
+            new RouteValueDictionary { });
+
             routes.MapPageRoute("Register",
                 "register",
                 "~/register.aspx", true,

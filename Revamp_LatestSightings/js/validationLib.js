@@ -372,7 +372,13 @@
                 if (data.d == true) {
                     $(".registerSpinner").hide();
                     $(".successfullyRegistered").show();
-                    setTimeout(function () { location.href = "/dashboard.aspx"; }, 3500);
+                    if (location.href.toLowerCase().indexOf("storeregister") != -1) {
+                        setTimeout(function () { location.href = "/shop" }, 3500);
+                    }
+                    else {
+                        setTimeout(function () { location.href = "/dashboard.aspx"; }, 3500);
+                    }
+                        
                 } else {
                     console.log("in else part");
                 }
@@ -401,7 +407,7 @@
                         SetRememberCookie(data.d.encreptedPassword);
                     }
                     if (location.href.toLowerCase().indexOf("storelogin") != -1) {
-                        setTimeout(function () { location.href = "/store" }, 3500);
+                        setTimeout(function () { location.href = "/shop" }, 3500);
                     } else {
                         setTimeout(function () { location.href = "/dashboard.aspx" }, 3500);
                     }
