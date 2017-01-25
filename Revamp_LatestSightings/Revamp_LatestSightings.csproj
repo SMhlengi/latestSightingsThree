@@ -348,6 +348,7 @@
     <Content Include="sightings.aspx" />
     <Content Include="store.aspx" />
     <Content Include="storelogin.aspx" />
+    <Content Include="storeregister.aspx" />
     <Content Include="terms.aspx" />
     <Content Include="termsAndConditions.ascx" />
     <Content Include="ting.aspx" />
@@ -658,6 +659,13 @@
     </Compile>
     <Compile Include="storelogin.aspx.designer.cs">
       <DependentUpon>storelogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="storeregister.aspx.cs">
+      <DependentUpon>storeregister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="storeregister.aspx.designer.cs">
+      <DependentUpon>storeregister.aspx</DependentUpon>
     </Compile>
     <Compile Include="terms.aspx.cs">
       <DependentUpon>terms.aspx</DependentUpon>
