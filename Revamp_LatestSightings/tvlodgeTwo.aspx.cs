@@ -102,6 +102,11 @@ namespace Revamp_LatestSightings
         {
             var temp = item.Replace("<p>", "");
             temp = temp.Replace("</p>", "");
+            temp = temp.Replace("&nbsp;", "");
+            temp = temp.Replace("\n", "");
+            temp = temp.Replace("\r", ""); // 
+            temp = temp.Replace("\r\n", ""); 
+
 
             return temp;
         }
