@@ -123,5 +123,11 @@
     <script src="<%= ResolveUrl("~/js/homePage.js?v=5") %>"></script>
     <script src="<%= ResolveUrl("~/js/bootstrap.youtubepopup.min.js?v=10") %>"></script>
 
+    <script>
+        $(document).ready(function () {
+            $("img").addClass("img-responsive");
+        });
+    </script>
+
 
 </asp:Content>
