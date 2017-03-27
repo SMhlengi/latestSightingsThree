@@ -54,17 +54,6 @@ namespace Revamp_LatestSightings
         {
             articles = new List<Dictionary<string, string>>();
             articles = library.SearchAllArticle(searchString);
-            if (articles != null && articles.Count > 0)
-            {
-                c_articles = new List<Dictionary<string, string>>();
-                foreach (var article in articles)
-                {
-                    var temp_article = new Dictionary<string, string>();
-                    temp_article = utils.CleanUpArticleForBloglist(article);
-                    temp_article["body"] = temp_article["header"] + "....";
-                    c_articles.Add(temp_article);
-                }
-            }
         }
 
         private bool IsThereSearchString()

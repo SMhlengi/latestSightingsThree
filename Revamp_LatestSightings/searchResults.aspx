@@ -9,8 +9,8 @@
 </ul>
 
 <div class="articleResultsOptionTwo">
-    <%if (c_articles != null && c_articles.Count > 0) { %>
-         <%foreach (var item in c_articles){ %>
+    <%if (articles != null && articles.Count > 0) { %>
+         <%foreach (var item in articles){ %>
             <%if (item["body"] != ""){ %>
 
                 <div class="bs-callout bs-callout-danger" id="callout-tables-striped-ie8">
