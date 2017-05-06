@@ -96,6 +96,7 @@
     <Content Include="css\animate.min.css" />
     <Content Include="css\bloglist.css" />
     <Content Include="css\board.css" />
+    <Content Include="css\BoardStyleSheetBackup.css" />
     <Content Include="css\boardThree.css" />
     <Content Include="css\bootstrap-theme.css" />
     <Content Include="css\bootstrap-theme.min.css" />
