@@ -5,7 +5,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <script src="<%=ResolveUrl("~/js/SightingTingInfo.js?v=6") %>"></script>
+    <script src="<%=ResolveUrl("~/js/SightingTingInfo.js?v=7") %>"></script>
     <script src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyB3O6AqwnZ3uHY0h6ulDrxlAWXXrs99VqI"></script>
 					<div class="row">
                     	<!-- LEFT Content BEGIN -->

@@ -3,7 +3,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <script src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyB3O6AqwnZ3uHY0h6ulDrxlAWXXrs99VqI"></script>
-    <script src="<%= ResolveUrl("~/js/parkSightings.js?v=3") %>"></script>
+    <script src="<%= ResolveUrl("~/js/parkSightings.js?v=4") %>"></script>
 
 					<div class="row">
                     	<!-- LEFT Content BEGIN -->

@@ -23,7 +23,7 @@ function buildBlogsHtml() {
     if (LATESTBLOGS.length > 0) {
         var blogshtml = "";
         for (var i = 0; i < LATESTBLOGS.length; i++) {
-            blogshtml += blogList.replace(/#blogurl#/g, LATESTBLOGS[i].urlName.replace(/ /g, "_")).replace("#articleImagePath#", "http://cdn.socialengine.co.za/latestsightings/article").replace("#pictureurl#", LATESTBLOGS[i].picture).replace("#blogheader#", LATESTBLOGS[i].header);
+            blogshtml += blogList.replace(/#blogurl#/g, LATESTBLOGS[i].urlName.replace(/ /g, "_")).replace("#articleImagePath#", "https://cdn.socialengine.co.za/latestsightings/article").replace("#pictureurl#", LATESTBLOGS[i].picture).replace("#blogheader#", LATESTBLOGS[i].header);
         }
 
         $("#homepageLatestBlogs").prepend(blogshtml);

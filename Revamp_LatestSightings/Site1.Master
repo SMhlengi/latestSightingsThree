@@ -43,7 +43,7 @@
     <script src="<%= ResolveUrl("~/js/jquery.migrate.js") %>"></script>
     <script src="<%= ResolveUrl("~/js/homePageBillboard.js?v=3") %>"></script>
     <script src="<%= ResolveUrl("~/js/youtubeSearchResults.js") %>"></script>
-    <script src="<%= ResolveUrl("~/js/homePageLatestBlogs.js?v=3") %>"></script>
+    <script src="<%= ResolveUrl("~/js/homePageLatestBlogs.js?v=4") %>"></script>
     <script src="<%= ResolveUrl("~/js/homepageLattestGalleries.js?v=4") %>"></script>
     <script src="<%= ResolveUrl("~/js/2owl.carousel.min.js") %>"></script>
     <script src="<%= ResolveUrl("~/js/scripts.js?v=7") %>"></script>
