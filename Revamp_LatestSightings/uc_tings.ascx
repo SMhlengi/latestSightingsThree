@@ -36,7 +36,7 @@
 							        <div class="related-portfolio-item item">
                                         <a href="#">
 									        <div class="ls-member">
-										        <div class="ls-info"><img alt="" src="http://tingsservice.socialengine.co.za/tings/image/<%=ting["id"] %>"></div>
+										        <div class="ls-info"><img alt="" src="https://tingsservice.socialengine.co.za/tings/image/<%=ting["id"] %>"></div>
 										        <div class="ls-title">
 											        <h4><%=ting["title"] %></h4>
 											        <p>Today @ <%=ting["time"] %> <br>Kruger Park <br> South Africa</p>

@@ -79,7 +79,7 @@ function populateHomePageTingsImages(tings) {
 function setTingImage(control, tingId) {
     $(control + " img").removeClass("tingImage");
     $(control + " img").attr("src", "");
-    $(control + " img").attr("src", "http://tingsservice.socialengine.co.za/tings/image/" + tingId)
+    $(control + " img").attr("src", "https://tingsservice.socialengine.co.za/tings/image/" + tingId)
 }
 
 function setTingTitle(control, title) {

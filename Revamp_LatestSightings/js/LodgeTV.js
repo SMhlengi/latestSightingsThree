@@ -127,7 +127,7 @@ function populateTingsHtml(tings) {
 		'</div>';
     var ting = "";
     for (var i = 0; i < tings.length; i++) {
-        ting = tingTemplate.replace("#title#", tings[i].title).replace("#time#", tings[i].time).replace("#tingimage#", "http://tingsservice.socialengine.co.za/tings/image/" + tings[i].id);
+        ting = tingTemplate.replace("#title#", tings[i].title).replace("#time#", tings[i].time).replace("#tingimage#", "https://tingsservice.socialengine.co.za/tings/image/" + tings[i].id);
         $("#owl-slider").data('owlCarousel').addItem(ting);
     }
 }
