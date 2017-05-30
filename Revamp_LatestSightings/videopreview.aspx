@@ -12,7 +12,7 @@
                   ready: function () {
                       $(this).jPlayer("setMedia", {
                           title: "<%=title %>",
-                          m4v: "https://rfuapi.socialengine.co.za/Uploads/" + "<%=filename %>",
+                          m4v: "https://rfuapitwo.latestsightings.com/Uploads/<%=filename %>",
                           poster: "http://lscms2.socialengine.co.za/images/Latest-Sightings-Elephant-poster.jpg"
                       });
                   },
@@ -337,7 +337,8 @@
                     <div class="row">
                         <div class="col-md-4">
                             <%--<form id="VideoDownload" runat="server">--%>
-                                <asp:Button CssClass="btn btn-info" ID="downloadVideo2" OnClick="downloadVideo_Click" runat="server" Text="Download Video" />
+                                <%--<asp:Button CssClass="btn btn-info" ID="downloadVideo2" OnClick="downloadVideo_Click" runat="server" Text="Download Video" />--%>
+                                <a class="btn btn-info" href="https://rfuapitwo.latestsightings.com/Uploads/<%=filename %>" role="button" target="_blank">Download Video</a>
                                 <asp:HiddenField ID="Hiddenfilename" runat="server" />
                             <%--</form>--%>
                         </div>
