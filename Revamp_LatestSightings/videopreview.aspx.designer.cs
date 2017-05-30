@@ -13,15 +13,6 @@ namespace Revamp_LatestSightings {
     public partial class videopreview {
         
         /// <summary>
-        /// downloadVideo2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button downloadVideo2;
-        
-        /// <summary>
         /// Hiddenfilename control.
         /// </summary>
         /// <remarks>
